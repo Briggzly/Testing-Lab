@@ -19,11 +19,6 @@ test("should return hello, 'name'", () => {
   expect(greeting("Jill")).toEqual("Hello, Jill");
 });
 
-test("should add num1 and num2", () => {
-  expect(add(1, 2)).toEqual(3);
-  expect(add(5, 9)).toEqual(14);
-});
-
 describe("basic math functions", () => {
   test("should multiply num1 by num2", () => {
     expect(multiply(2, 2)).toEqual(4);
@@ -36,5 +31,9 @@ describe("basic math functions", () => {
     test("should subtract num1 by num2", () => {
       expect(subtract(4, 2)).toEqual(2);
       expect(subtract(7, 4)).toEqual(3);
-    });
+    }),
+    test("should add num1 and num2", () => {
+        expect(add(1, 2)).toEqual(3);
+        expect(add(5, 9)).toEqual(14);
+      });
 });
